@@ -33,4 +33,16 @@ h5{
 h6{
     color:#D8D8D8;
 }
+.navbar{
+    font-size: 16px;
+}
+.navbar .container-fluid .collapse .nav-item .nav-link{
+    padding: 0 20px;
+    color: rgb(0, 0, 0);
+    transition: 0.3s ease;
+}
+.navbar .container-fluid .collapse .nav-item .nav-link:hover{
+    color: coral;
+}
+
 
