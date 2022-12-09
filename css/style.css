@@ -42,7 +42,7 @@ button{
     outline: none;
     border: none;
     background-color: black;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     cursor: pointer;
     padding: 13px 30px;
     text-transform: uppercase;
@@ -61,7 +61,7 @@ button:hover{
 .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link{
     padding: 0 20px;
     color: rgb(0, 0, 0);
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 .navbar .container-fluid .collapse .navbar-nav .nav-link:hover,
 .navbar .icones:hover{
@@ -77,6 +77,46 @@ button:hover{
 .navbar .icones{
    margin-left: 5px;
 }
+.navbar .container-fluid .navbar-toggler{
+    border: none;
+    outline: none;
+    
+}
+#bar{
+    font-size: 2.5rem;
+    padding: 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+#bar:hover{
+    color: #fff;
+}
+
+/* Mobile Nav */
+@media only screen and (max-width: 900px){
+    
+    body > nav > div > button:hover,
+    body > nav > div > button:focus{
+        background-color: #fb774b;
+    }
+    body > nav > div > button:hover #bar,
+    body > nav > div > button:focus #bar{
+        color: #fff; 
+    }
+
+    #navbarSupportedContent > ul{
+        margin: 1rem;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: center;
+    }
+    #navbarSupportedContent > ul > li:nth-child(n) > a{
+        padding: 10px 0;
+    }
+    
+}
+/* Mobile Nav */
 
 /*Fim da estilização do navbar*/
 
@@ -95,3 +135,4 @@ button:hover{
     color: coral;
 
 }
+
