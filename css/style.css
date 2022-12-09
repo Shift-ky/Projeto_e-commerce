@@ -36,6 +36,16 @@ h5{
 h6{
     color: #D8D8D8;
 }
+hr{
+    width: 30px;
+    height: px;
+    background-color: #fb774b;
+}
+.star{
+    padding: 10px 0;
+    font-size: 0.8rem;
+    color: goldenrod;
+}
 button{
     font-size: 0.8rem;
     font-weight: 700;
@@ -191,6 +201,29 @@ button:hover{
     flex-direction: column;
     align-items: flex-end;
     text-align: end;
+}
+/*Produtos*/
+.product{
+    cursor: pointer;
+    margin-bottom: 2rem;
+
+}
+.product img{
+    transition: 0.3s all;
+}
+.product:hover img{
+    opacity: 0.7;
+}
+.product .btn-buy{
+    background: #fb774b;
+    transform: translate(20px);
+    opacity: 0;
+    transition: .3s all;
+}
+.product:hover .btn-buy{
+    transform: translateY(20px);
+    opacity: 1;
+
 }
 
 
