@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Produtos detalhes</title>
     <!--Link da folha de estilo do css-->
     <link rel="stylesheet" href="css/style.css">
     <!--Fim do Css-->
@@ -16,6 +16,36 @@
     <!--Link dos icones-->
     <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
     <!--Fim do link dos ícones-->
+
+    <style>
+    .small-img-group{
+      display: flex;
+      justify-content: space-between;
+    }
+    .small-img-col{
+      flex-basis: 24%;
+      cursor: pointer;
+    }
+    .sproduct select{
+      display: block;
+      padding: 5px 10px;
+    }
+    .sproduct input{
+      width: 50px;
+      height: 40px;
+      padding-left: 10px;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+    .sproduct input:focus{
+      outline: none;
+    }
+    .buy-btn{
+      background: #fb774b;
+      opacity: 1;
+      transition: 0.3s all;
+    }
+    </style>
 
   </head>
 
@@ -63,15 +93,116 @@
     </nav>
     <!--Fim do navbar-->
 
+    <section class=" container sproduct my-5 pt-5">
+      <div class="row mt-5">
+        <div class="col-lg-5 col-mb-12 col-12">
+          <img class="img-fluid w-100 pb-1" src="imagens/relogio.jpg" alt="">
+          <!--Fotos pequenas-->
+          <div class="small-img-group">
+            <div class="small-img-col">
+              <img src="imagens/11.jpg" alt="" width="100%" class="small-img">
+            </div>
 
+          
 
+            <div class="small-img-col">
+              <img src="imagens/1.jpg" alt="" width="100%" class="small-img">
+            </div>
 
+            <div class="small-img-col">
+              <img src="imagens/1.jpg" alt="" width="100%" class="small-img">
+            </div>
 
+            <div class="small-img-col">
+              <img src="imagens/1.jpg" alt="" width="100%" class="small-img">
+            </div>
+          </div>
+        
+        </div>
+        <div class="col-lg-6 col-mb-12 col-12">
+          <h6>HOME/ T SHIRT</h6>
+          <h3 class="py-4">Men,s Fashion T Shirt</h3>
+          <h2>$139.00</h2>
+          <select class="my-3" id="">
+            <option>Select Size</option>
+            <option>XL</option>
+            <option>XXL</option>
+            <option>SMALL</option>
+            <option>LARGE</option>
+          </select>
+          <input type="number" value="1">
+          <button class="buy-btn">Add to cart</button>
+          <h4 class="mt-5 mb-5">Product Details</h4>
+          <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore dolor omnis eum obcaecati enim non sapiente totam deleniti ad quasi? Quaerat vitae quasi odit in repellat, sint porro possimus, officiis tempora accusantium magni praesentium eaque dolores culpa autem ab alias excepturi sed, consectetur earum sapiente repudiandae tenetur amet reprehenderit! Tempore ab porro recusandae iusto fugiat cumque nulla repudiandae quo qui dolorem magnam ad, sapiente laboriosam a nesciunt facere alias id laudantium! Dignissimos at sapiente exercitationem! Fugiat aliquid saepe aliquam fugit eligendi, minima sit hic officiis, quaerat error delectus ut nulla iusto. Excepturi, saepe. Molestiae voluptas, incidunt libero ad dolorum aliquam?</span>
+        </div>
+      </div>
+    </section>
 
+    <section id="featured" class="my-5 pb-5">
+      <div class="container text-center mt-5 py-5">
+        <h3>Related Products</h3>
+        <hr class="mx-auto">
+      </div>
 
+      <div class="row mx-auto container-fluid">
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3" src="imagens/relogio.jpg" alt="">
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h5 class="p-name">Relógio Oriente</h5>
+          <h4 class="p-price">R$ 590.00</h4>
+          <button class="btn-buy">BUY NOW</button>
+        </div>
 
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3" src="imagens/relogio2.jpg" alt="">
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h5 class="p-name">Relógio Condor</h5>
+          <h4 class="p-price">R$ 320.00</h4>
+          <button class="btn-buy">BUY NOW</button>
+        </div>
 
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3" src="imagens/bone.jpg" alt="">
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h5 class="p-name">Boné Minecraft</h5>
+          <h4 class="p-price">R$ 59.90</h4>
+          <button class="btn-buy">BUY NOW</button>
+        </div>
 
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3" src="imagens/relogio.jpg" alt="">
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h5 class="p-name">RelógioOriente</h5>
+          <h4 class="p-price">R$ 590.00</h4>
+          <button class="btn-buy">BUY NOW</button>
+        </div>
+      </div>
+    </section>
+    
 
 
      <!---Footer-->
